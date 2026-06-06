@@ -37,6 +37,38 @@
   });
 })();
 
+/* --- Tiroir de navigation (mobile) --- */
+(function () {
+  const btnBurger = document.getElementById('nav-burger');
+  const tiroir    = document.getElementById('nav-tiroir');
+  const fondTiroir = document.getElementById('nav-tiroir-fond');
+  const btnFermer = document.getElementById('nav-tiroir-fermer');
+
+  if (!btnBurger || !tiroir) return;
+
+  function ouvrir() {
+    tiroir.classList.add('ouvert');
+    btnBurger.classList.add('ouvert');
+    btnBurger.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function fermer() {
+    tiroir.classList.remove('ouvert');
+    btnBurger.classList.remove('ouvert');
+    btnBurger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  btnBurger.addEventListener('click', ouvrir);
+  if (btnFermer)   btnFermer.addEventListener('click', fermer);
+  if (fondTiroir)  fondTiroir.addEventListener('click', fermer);
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && tiroir.classList.contains('ouvert')) fermer();
+  });
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.footer__ticker-piste').forEach((piste) => {
