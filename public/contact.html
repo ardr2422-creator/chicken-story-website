@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contactez Chicken Story — une question, un partenariat, une commande de groupe. On vous répond vite." />
+    <title>Contact — Chicken Story</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="images/logo-hd.png" as="image" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- Écran de chargement -->
+    <div class="chargement" id="chargement" aria-hidden="true">
+      <img src="images/logo-hd.png" alt="" class="chargement__logo">
+      <div class="chargement__barre-conteneur">
+        <div class="chargement__barre" id="chargement-barre"></div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar--espacee">
+      <ul class="nav-liens nav-liens--gauche">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="menu.html">Menu</a></li>
+      </ul>
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Chicken Story" class="logo__img">
+      </a>
+      <div class="navbar__droite">
+        <ul class="nav-liens">
+          <li><a href="contact.html" class="nav-actif">Contact</a></li>
+        </ul>
+        <a href="nous-trouver.html" class="navbar__cta">Nous trouver</a>
+      </div>
+    </nav>
+
+    <main>
+
+      <!-- HERO -->
+      <section class="contact-form-hero">
+        <div class="container contact-form-hero__conteneur">
+          <span class="section-badge">Contact</span>
+          <h1 class="contact-form-hero__titre">Une question&nbsp;?</h1>
+          <p class="contact-form-hero__sous">
+            On lit chaque message personnellement.<br>
+            Réponse sous 24h, toujours.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION PRINCIPALE : coordonnées + formulaire -->
+      <section class="contact-principale">
+        <div class="container">
+          <div class="contact-principale__grille">
+
+            <!-- COLONNE GAUCHE : coordonnées -->
+            <div class="coord-col">
+
+              <span class="section-badge">Nous joindre</span>
+
+              <div class="coord-carte">
+                <div class="coord-carte__icone" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.09-1.09a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
+                </div>
+                <div class="coord-carte__corps">
+                  <span class="coord-carte__label">Téléphone</span>
+                  <a href="tel:+33139821427" class="coord-carte__valeur">01 39 82 14 27</a>
+                  <span class="coord-carte__sous">Tous les jours · à partir de 19h</span>
+                </div>
+              </div>
+
+              <div class="coord-sep"></div>
+
+              <div class="coord-carte">
+                <div class="coord-carte__icone" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="coord-carte__corps">
+                  <span class="coord-carte__label">Email</span>
+                  <a href="mailto:contact@chickenstory.fr" class="coord-carte__valeur">contact@chickenstory.fr</a>
+                  <span class="coord-carte__sous">Réponse sous 24h</span>
+                </div>
+              </div>
+
+              <div class="coord-sep"></div>
+
+              <div class="coord-carte">
+                <div class="coord-carte__icone" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="coord-carte__corps">
+                  <span class="coord-carte__label">Adresse</span>
+                  <a href="nous-trouver.html" class="coord-carte__valeur">236 Bis Route D'Enghien</a>
+                  <span class="coord-carte__sous">95100 Argenteuil · Île-de-France</span>
+                </div>
+              </div>
+
+              <div class="coord-sep"></div>
+
+              <div class="coord-carte">
+                <div class="coord-carte__icone" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="coord-carte__corps">
+                  <span class="coord-carte__label">Horaires</span>
+                  <div class="coord-horaires">
+                    <div class="coord-horaires__ligne">
+                      <span>Tous les jours</span>
+                      <span>19h00 – 4h00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- COLONNE DROITE : QCM + formulaire -->
+            <div class="form-col">
+
+              <h2 class="form-col__titre">Écrivez-nous.</h2>
+              <p class="form-col__sous">Quel que soit le sujet, on est à l'écoute.</p>
+
+              <form action="#" method="POST" novalidate>
+
+                <!-- QCM -->
+                <label class="qcm-label" id="qcm-label">Votre demande porte sur</label>
+                <div class="qcm-grille" role="group" aria-labelledby="qcm-label">
+                  <label class="qcm-option">
+                    <input type="radio" name="sujet" value="menu" required>
+                    <span class="qcm-option__label">Le menu &amp; les produits</span>
+                  </label>
+                  <label class="qcm-option">
+                    <input type="radio" name="sujet" value="groupe">
+                    <span class="qcm-option__label">Commande de groupe</span>
+                  </label>
+                  <label class="qcm-option">
+                    <input type="radio" name="sujet" value="partenariat">
+                    <span class="qcm-option__label">Partenariat</span>
+                  </label>
+                  <label class="qcm-option">
+                    <input type="radio" name="sujet" value="autre">
+                    <span class="qcm-option__label">Autre chose</span>
+                  </label>
+                </div>
+
+                <!-- Nom + Email -->
+                <div class="contact-champs">
+                  <div class="contact-champ">
+                    <label class="contact-champ__label" for="nom">Nom</label>
+                    <input
+                      class="contact-champ__input"
+                      type="text"
+                      id="nom"
+                      name="nom"
+                      placeholder="Votre nom"
+                      autocomplete="name"
+                      required
+                    >
+                  </div>
+                  <div class="contact-champ">
+                    <label class="contact-champ__label" for="email">Email</label>
+                    <input
+                      class="contact-champ__input"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="votre@email.fr"
+                      autocomplete="email"
+                      required
+                    >
+                  </div>
+                </div>
+
+                <!-- Message -->
+                <div class="contact-champ contact-champ--plein">
+                  <label class="contact-champ__label" for="message">Message</label>
+                  <textarea
+                    class="contact-champ__input contact-champ__textarea"
+                    id="message"
+                    name="message"
+                    placeholder="Dites-nous tout..."
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="contact-envoyer">
+                  Envoyer le message
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+
+              </form>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+
+      <div class="footer__ticker" aria-hidden="true">
+        <div class="footer__ticker-piste">
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+        </div>
+      </div>
+
+      <div class="footer__corps">
+        <div class="container footer__grille">
+
+          <div class="footer__col footer__marque">
+            <a href="index.html" class="footer__logo" aria-label="Chicken Story - accueil">
+              <img src="images/logo.png" alt="Chicken Story" class="footer__logo-img">
+            </a>
+          </div>
+
+          <div class="footer__sep" aria-hidden="true"></div>
+
+          <div class="footer__col">
+            <h3 class="footer__col-titre">Informations</h3>
+            <ul class="footer__liste">
+              <li><a href="mentions-legales.html">Mentions légales</a></li>
+              <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__sep" aria-hidden="true"></div>
+
+          <div class="footer__col">
+            <ul class="footer__liste">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__sep" aria-hidden="true"></div>
+
+          <div class="footer__col">
+            <h3 class="footer__col-titre">Suivez-nous</h3>
+            <ul class="footer__liste footer__liste--reseaux">
+              <li>
+                <svg class="footer__reseau-icone" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                <a href="#">chicken.story</a>
+              </li>
+              <li>
+                <svg class="footer__reseau-icone" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.95a8.27 8.27 0 0 0 4.84 1.56V7.07a4.85 4.85 0 0 1-1.07-.38z"/></svg>
+                <a href="#">@chickenstory</a>
+              </li>
+              <li>
+                <svg class="footer__reseau-icone" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                <a href="#">Chicken Story Argenteuil</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        <p>© 2025 Chicken Story · Argenteuil · Île-de-France · Tous droits réservés</p>
+      </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

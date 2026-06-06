@@ -1,12 +1,431 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Chicken Story - Restaurant de poulet fermier" />
-    <title>Chicken Story</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chicken Story, Argenteuil — poulet frit mariné 24h, pané à la commande, jamais réchauffé. Naans, tenders, wings et buckets familiaux." />
+    <title>Chicken Story — Poulet Frit Argenteuil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="images/logo-hd.png" as="image" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div id="root"></div>
+
+    <!-- Écran de chargement -->
+    <div class="chargement" id="chargement" aria-hidden="true">
+      <img src="images/logo-hd.png" alt="" class="chargement__logo">
+      <div class="chargement__barre-conteneur">
+        <div class="chargement__barre" id="chargement-barre"></div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar--espacee">
+      <ul class="nav-liens nav-liens--gauche">
+        <li><a href="index.html" class="actif">Accueil</a></li>
+        <li><a href="menu.html">Menu</a></li>
+      </ul>
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Chicken Story" class="logo__img">
+      </a>
+      <div class="navbar__droite">
+        <ul class="nav-liens">
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="nous-trouver.html" class="navbar__cta">Nous trouver</a>
+      </div>
+    </nav>
+
+    <main>
+
+      <!-- ==================== HERO ==================== -->
+      <section class="hero" id="accueil">
+
+        <!-- Photo de fond + overlay -->
+        <div class="hero__bg" aria-hidden="true">
+          <img src="images/facade.webp" alt="" class="hero__bg-img">
+          <div class="hero__overlay"></div>
+        </div>
+
+        <div class="container hero__conteneur">
+
+          <!-- Tagline secondaire -->
+          <p class="hero__eyebrow">
+            <span class="hero__eyebrow-trait"></span>
+            Argenteuil · Île-de-France
+            <span class="hero__eyebrow-trait"></span>
+          </p>
+
+          <!-- Titre massif -->
+          <h1 class="hero__titre">
+            L'obsession<br>du poulet frit.
+          </h1>
+
+          <!-- Description -->
+          <p class="hero__sous-titre">
+            Mariné 24h dans nos épices maison, pané à la commande, servi brûlant.<br>
+            Jamais surgelé. Jamais réchauffé. Toujours à point.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero__actions">
+            <a href="menu.html" class="hero__btn-cta">
+              <span>Voir le menu</span>
+              <span class="hero__btn-fleche" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path d="M2 7h10M7.5 3 11.5 7l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </a>
+            <a href="nous-trouver.html" class="hero__btn-lien">
+              Nous trouver
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true">
+                <path d="M1.5 9.5 9.5 1.5M4 1.5h5.5v5.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Stats pill -->
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <span class="hero__stat-val">4.8 / 5</span>
+              <span class="hero__stat-etoiles">★★★★★</span>
+              <span class="hero__stat-label">Uber Eats</span>
+            </div>
+            <div class="hero__separateur"></div>
+            <div class="hero__stat">
+              <span class="hero__stat-val">+12 000</span>
+              <span class="hero__stat-label">clients servis</span>
+            </div>
+            <div class="hero__separateur"></div>
+            <div class="hero__stat">
+              <span class="hero__stat-val">3 ans</span>
+              <span class="hero__stat-label">d'expérience</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Indicateur de scroll -->
+        <div class="hero__scroll-indicateur" aria-hidden="true">
+          <div class="hero__scroll-barre"></div>
+        </div>
+
+      </section>
+      <!-- ==================== FIN HERO ==================== -->
+
+      <!-- ==================== NOTRE HISTOIRE ==================== -->
+      <section class="histoire" id="histoire">
+
+        <div class="container">
+
+          <div class="histoire__entete">
+            <span class="section-badge">L'histoire</span>
+            <h2 class="histoire__titre">
+              Une obsession depuis 2021.<br>
+              <span class="histoire__titre-accent">Affinée à chaque service.</span>
+            </h2>
+          </div>
+
+          <div class="histoire__grille">
+
+            <!-- Texte principal -->
+            <div class="histoire__texte-bloc">
+              <p class="histoire__lead">
+                Tout a commencé en 2021 dans une petite cuisine de Créteil,
+                avec une seule question : pourquoi le poulet frit en Île-de-France
+                était-il si décevant ?
+              </p>
+              <p class="histoire__corps">
+                Karim Benali a passé deux ans à construire une marinade qui n'existe
+                nulle part ailleurs — un assemblage d'épices du Maghreb, de paprika fumé
+                et d'herbes fraîches. Chaque pièce repose 24 heures, est panée à la commande,
+                puis frite dans une huile renouvelée chaque matin. Pas de raccourci,
+                pas de surgelé.
+              </p>
+              <p class="histoire__corps">
+                Installé à Argenteuil depuis 2022, Chicken Story a construit
+                sa clientèle sur une seule chose : la constance.
+                Les mêmes produits frais, les mêmes portions,
+                le même soin — du premier au douzième millième client.
+              </p>
+
+              <a href="menu.html" class="histoire__lien">
+                Découvrir le menu
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M2 7h10M7.5 3 11.5 7l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Colonne valeurs -->
+            <div class="histoire__valeurs">
+
+              <div class="histoire__valeur">
+                <div class="histoire__valeur-icone">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 22c0 0-8-4-8-12C4 6 7.6 3 12 3s8 3 8 7c0 8-8 12-8 12Z" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round"/>
+                    <path d="M12 22v-9" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+                    <path d="M9 14c1.5-1.5 3-1.5 3-1.5s1.5 0 3 1.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="histoire__valeur-titre">Produits frais</h3>
+                  <p class="histoire__valeur-desc">
+                    Poulet livré chaque matin, directement du fournisseur.
+                    Ce qui n'est pas frais ne passe pas le comptoir.
+                  </p>
+                </div>
+              </div>
+
+              <div class="histoire__valeur">
+                <div class="histoire__valeur-icone">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.25"/>
+                    <path d="M12 7.5V12l3 2" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="histoire__valeur-titre">Fait à la commande</h3>
+                  <p class="histoire__valeur-desc">
+                    Rien n'attend sous une lampe chauffante ici.
+                    Vous commandez, on prépare — dans cet ordre.
+                  </p>
+                </div>
+              </div>
+
+              <div class="histoire__valeur">
+                <div class="histoire__valeur-icone">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 21c0 0-6.5-3.5-6.5-9.5 0-3 2-5.5 4-6.5 0 2 1 3.5 2.5 4 0 0-1-2 1-4 1.5-2 4 0 4 0 2 2 1.5 5 1.5 6.5C18.5 17.5 12 21 12 21Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="histoire__valeur-titre">Recette maison</h3>
+                  <p class="histoire__valeur-desc">
+                    24h de marinade, épices sélectionnées, panure faite sur place.
+                    Deux ans à la mettre au point. Personne d'autre ne l'a.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Chiffres clés -->
+          <div class="histoire__chiffres">
+            <div class="histoire__chiffre">
+              <span class="histoire__chiffre-val">2021</span>
+              <span class="histoire__chiffre-label">Année de création</span>
+            </div>
+            <div class="histoire__chiffre">
+              <span class="histoire__chiffre-val">+12 000</span>
+              <span class="histoire__chiffre-label">Clients — et ça continue</span>
+            </div>
+            <div class="histoire__chiffre">
+              <span class="histoire__chiffre-val">24h</span>
+              <span class="histoire__chiffre-label">De marinade minimum</span>
+            </div>
+            <div class="histoire__chiffre">
+              <span class="histoire__chiffre-val">4.8/5</span>
+              <span class="histoire__chiffre-label">Note Uber Eats</span>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+      <!-- ==================== FIN NOTRE HISTOIRE ==================== -->
+
+      <!-- ==================== AVIS CLIENTS ==================== -->
+      <section class="avis" id="avis">
+
+        <div class="avis__fond" aria-hidden="true">
+          <div class="avis__orbe avis__orbe--1"></div>
+          <div class="avis__orbe avis__orbe--2"></div>
+        </div>
+
+        <div class="container">
+
+          <!-- En-tête avec note globale -->
+          <div class="avis__entete">
+
+            <span class="section-badge section-badge--clair">Avis clients</span>
+
+            <div class="avis__note-globale">
+              <div class="avis__note-chiffre">4.8<span class="avis__note-max">/5</span></div>
+              <div class="avis__note-detail">
+                <div class="avis__etoiles" aria-label="4.8 étoiles sur 5">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span class="avis__etoile-partielle">★</span>
+                </div>
+                <div class="avis__note-source">
+                  <span class="avis__uber-logo" aria-hidden="true">
+                    <span>Uber</span>
+                    <span>Eats</span>
+                  </span>
+                  Uber Eats
+                </div>
+              </div>
+            </div>
+
+            <h2 class="avis__titre">
+              Pas besoin de nous<br>croire sur parole.
+            </h2>
+
+          </div>
+
+          <!-- Cartes avis -->
+          <div class="avis__grille">
+
+            <!-- Avis 1 : Ayoub -->
+            <article class="avis__carte">
+              <div class="avis__carte-int">
+                <div class="avis__carte-etoiles" aria-label="5 étoiles">★★★★★</div>
+                <blockquote class="avis__texte">
+                  "Excellente accueil du personnel, je recommande."
+                </blockquote>
+                <footer class="avis__auteur">
+                  <div class="avis__avatar" aria-hidden="true">A</div>
+                  <div>
+                    <p class="avis__nom">Ayoub</p>
+                    <p class="avis__plateforme">Uber Eats</p>
+                  </div>
+                </footer>
+              </div>
+            </article>
+
+            <!-- Avis 2 : Ali (carte centrale mise en avant) -->
+            <article class="avis__carte avis__carte--vedette">
+              <div class="avis__carte-int">
+                <div class="avis__vedette-badge">★ Coup de cœur</div>
+                <div class="avis__carte-etoiles" aria-label="5 étoiles">★★★★★</div>
+                <blockquote class="avis__texte">
+                  "Nourriture excellente, tenders incroyables, sandwich buffalo très bon."
+                </blockquote>
+                <footer class="avis__auteur">
+                  <div class="avis__avatar avis__avatar--orange" aria-hidden="true">A</div>
+                  <div>
+                    <p class="avis__nom">Ali</p>
+                    <p class="avis__plateforme">Uber Eats</p>
+                  </div>
+                </footer>
+              </div>
+            </article>
+
+            <!-- Avis 3 : Edouard -->
+            <article class="avis__carte">
+              <div class="avis__carte-int">
+                <div class="avis__carte-etoiles" aria-label="5 étoiles">★★★★★</div>
+                <blockquote class="avis__texte">
+                  "Restaurant de qualité, propre, meilleur rapport qualité/prix, les naans une tuerie&nbsp;!"
+                </blockquote>
+                <footer class="avis__auteur">
+                  <div class="avis__avatar avis__avatar--vert" aria-hidden="true">E</div>
+                  <div>
+                    <p class="avis__nom">Edouard</p>
+                    <p class="avis__plateforme">Uber Eats</p>
+                  </div>
+                </footer>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+      <!-- ==================== FIN AVIS CLIENTS ==================== -->
+
+      <!-- Sections à venir -->
+
+    </main>
+
+    <footer class="footer">
+
+      <!-- Barre défilante -->
+      <div class="footer__ticker" aria-hidden="true">
+        <div class="footer__ticker-piste">
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+        </div>
+      </div>
+
+      <!-- Corps principal -->
+      <div class="footer__corps">
+        <div class="container footer__grille">
+
+          <!-- Logo -->
+          <div class="footer__col footer__marque">
+            <a href="index.html" class="footer__logo" aria-label="Chicken Story - accueil">
+              <img src="images/logo.png" alt="Chicken Story" class="footer__logo-img">
+            </a>
+          </div>
+
+          <div class="footer__sep" aria-hidden="true"></div>
+
+          <!-- Informations légales -->
+          <div class="footer__col">
+            <h3 class="footer__col-titre">Informations</h3>
+            <ul class="footer__liste">
+              <li><a href="mentions-legales.html">Mentions légales</a></li>
+              <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__sep" aria-hidden="true"></div>
+
+          <!-- Navigation -->
+          <div class="footer__col">
+            <ul class="footer__liste">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__sep" aria-hidden="true"></div>
+
+          <!-- Réseaux sociaux -->
+          <div class="footer__col">
+            <h3 class="footer__col-titre">Suivez-nous</h3>
+            <ul class="footer__liste footer__liste--reseaux">
+              <li>
+                <svg class="footer__reseau-icone" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                <a href="#">chicken.story</a>
+              </li>
+              <li>
+                <svg class="footer__reseau-icone" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.95a8.27 8.27 0 0 0 4.84 1.56V7.07a4.85 4.85 0 0 1-1.07-.38z"/></svg>
+                <a href="#">@chickenstory</a>
+              </li>
+              <li>
+                <svg class="footer__reseau-icone" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                <a href="#">Chicken Story Argenteuil</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer__copyright">
+        <p>© 2025 Chicken Story · Argenteuil · Île-de-France · Tous droits réservés</p>
+      </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

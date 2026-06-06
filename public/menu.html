@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Découvrez la carte Chicken Story : naans, tenders, wings et buckets familiaux à Argenteuil. Tout préparé à la commande, servi brûlant." />
+    <title>La Carte — Chicken Story</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="images/logo-hd.png" as="image" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- Écran de chargement -->
+    <div class="chargement" id="chargement" aria-hidden="true">
+      <img src="images/logo-hd.png" alt="" class="chargement__logo">
+      <div class="chargement__barre-conteneur">
+        <div class="chargement__barre" id="chargement-barre"></div>
+      </div>
+    </div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar navbar--espacee">
+      <ul class="nav-liens nav-liens--gauche">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="menu.html" class="actif">Menu</a></li>
+      </ul>
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Chicken Story" class="logo__img">
+      </a>
+      <div class="navbar__droite">
+        <ul class="nav-liens">
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="nous-trouver.html" class="navbar__cta">Nous trouver</a>
+      </div>
+    </nav>
+
+    <main>
+
+      <!-- ==================== HERO MENU ==================== -->
+      <section class="menu-hero">
+        <div class="menu-hero__bg" aria-hidden="true">
+          <img src="images/image de fond.jpeg" alt="" class="menu-hero__bg-img">
+          <div class="menu-hero__overlay"></div>
+        </div>
+        <div class="container menu-hero__conteneur">
+          <span class="menu-hero__badge">Notre carte</span>
+          <h1 class="menu-hero__titre">Ce qu'on fait<br>le mieux.</h1>
+          <p class="menu-hero__sous-titre">
+            Naans, tenders, wings, buckets — chaque plat a été pensé,
+            testé, retravaillé. Ce qui est sur cette carte, c'est ce qui a survécu.
+          </p>
+        </div>
+      </section>
+
+      <!-- ==================== NAANS & MENUS ==================== -->
+      <section class="menu-section menu-section--sombre" id="sandwichs">
+        <div class="container">
+
+          <div class="menu-section__entete">
+            <h2 class="menu-section__titre">Naans<br>&amp; Menus</h2>
+            <div class="menu-section__meta">
+              <span class="menu-section__compte">5 menus</span>
+            </div>
+          </div>
+
+          <!-- Bento : grande carte gauche + 2 cartes droite -->
+          <div class="sandwichs-bento">
+
+            <!-- Hero : Naan Tenders -->
+            <article class="plat-carte sandwichs-bento__hero">
+              <div class="plat-carte__photo" aria-hidden="true">
+                <img src="images/naan tenders.png" alt="">
+              </div>
+              <div class="plat-carte__degrade plat-carte__degrade--bas" aria-hidden="true"></div>
+              <div class="plat-carte__contenu">
+                <span class="plat-carte__badge plat-carte__badge--jaune">★ Incontournable</span>
+                <h3 class="plat-carte__nom">Naan<br>Tenders</h3>
+                <p class="plat-carte__desc">Pain naan moelleux, tenders marinés 24h, salade fraîche et sauce maison — menu complet avec frites et boisson</p>
+                <div class="plat-carte__bas">
+                  <span class="plat-carte__prix">16.50€</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Platinium -->
+            <article class="plat-carte plat-carte--horiz">
+              <div class="plat-carte__photo" aria-hidden="true">
+                <img src="images/platinium.png" alt="">
+              </div>
+              <div class="plat-carte__degrade" aria-hidden="true"></div>
+              <div class="plat-carte__contenu">
+                <span class="plat-carte__badge plat-carte__badge--jaune plat-carte__badge--compact">Premium</span>
+                <h3 class="plat-carte__nom">Platinium</h3>
+                <p class="plat-carte__desc">Notre création signature : naan gourmand, tenders croustillants, cheddar coulant et sauce secrète — avec frites et boisson</p>
+                <div class="plat-carte__bas">
+                  <span class="plat-carte__prix">17.90€</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Buffalo -->
+            <article class="plat-carte plat-carte--horiz">
+              <div class="plat-carte__photo" aria-hidden="true">
+                <img src="images/buffalo.png" alt="">
+              </div>
+              <div class="plat-carte__degrade" aria-hidden="true"></div>
+              <div class="plat-carte__contenu">
+                <span class="plat-carte__badge plat-carte__badge--rouge plat-carte__badge--compact">Épicé</span>
+                <h3 class="plat-carte__nom">Buffalo</h3>
+                <p class="plat-carte__desc">Poulet croustillant, sauce buffalo intense, pickles acidulés — pour ceux qui aiment quand ça pique. Avec frites et boisson</p>
+                <div class="plat-carte__bas">
+                  <span class="plat-carte__prix">17.90€</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Naan Chicken Tandoori -->
+            <article class="plat-carte">
+              <div class="plat-carte__photo" aria-hidden="true">
+                <img src="images/Naan chicken tandoori.png" alt="">
+              </div>
+              <div class="plat-carte__degrade plat-carte__degrade--bas" aria-hidden="true"></div>
+              <div class="plat-carte__contenu">
+                <span class="plat-carte__badge plat-carte__badge--teal">Mariné</span>
+                <h3 class="plat-carte__nom">Naan Chicken<br>Tandoori</h3>
+                <p class="plat-carte__desc">Poulet mariné aux épices tandoori, salade croquante, sauce yaourt fraîche — voyage garanti. Avec frites et boisson</p>
+                <div class="plat-carte__bas">
+                  <span class="plat-carte__prix">16.50€</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- S3 -->
+            <article class="plat-carte">
+              <div class="plat-carte__photo" aria-hidden="true">
+                <img src="images/S3.png" alt="">
+              </div>
+              <div class="plat-carte__degrade plat-carte__degrade--bas" aria-hidden="true"></div>
+              <div class="plat-carte__contenu">
+                <span class="plat-carte__badge plat-carte__badge--jaune">Triple</span>
+                <h3 class="plat-carte__nom">S3</h3>
+                <p class="plat-carte__desc">Le format XXL : 3 escalopes panées dans un naan généreux, sauce de votre choix — pour les grandes faims. Avec frites et boisson</p>
+                <div class="plat-carte__bas">
+                  <span class="plat-carte__prix">16.50€</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- ==================== FIN NAANS ==================== -->
+
+      <!-- ==================== TENDERS & WINGS ==================== -->
+      <section class="menu-section menu-section--clair" id="tenders">
+        <div class="container">
+
+          <div class="menu-section__entete">
+            <h2 class="menu-section__titre">Tenders<br>&amp; Wings</h2>
+            <span class="menu-section__compte">4 formats</span>
+          </div>
+
+          <!-- Duo : 2 grandes cartes côte à côte -->
+          <div class="tenders-duo">
+
+            <article class="plat-carte">
+              <div class="plat-carte__photo" aria-hidden="true">
+                <img src="images/tender x6 menu.png" alt="" style="object-position: 50% 50%;">
+              </div>
+              <div class="plat-carte__degrade plat-carte__degrade--bas" aria-hidden="true"></div>
+              <div class="plat-carte__contenu">
+                <span class="plat-carte__badge plat-carte__badge--jaune">★ Best-seller</span>
+                <h3 class="plat-carte__nom">Tenders X6<br>Menu</h3>
+                <p class="plat-carte__desc">6 tenders marinés 24h dans nos épices maison, panés à la commande — le classique qu'on commande les yeux fermés. Avec frites et boisson</p>
+                <div class="plat-carte__bas">
+                  <span class="plat-carte__prix">15.50€</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="plat-carte">
+              <div class="plat-carte__photo" aria-hidden="true">
+                <img src="images/Hot Wings X10.png" alt="">
+              </div>
+              <div class="plat-carte__degrade plat-carte__degrade--bas" aria-hidden="true"></div>
+              <div class="plat-carte__contenu">
+                <span class="plat-carte__badge plat-carte__badge--rouge">Épicé</span>
+                <h3 class="plat-carte__nom">Hot Wings<br>X10</h3>
+                <p class="plat-carte__desc">10 ailes marinées, peau croustillante, chair fondante — piquant dosé à votre goût, 2 sauces au choix</p>
+                <div class="plat-carte__bas">
+                  <span class="plat-carte__prix">14.90€</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Duo bas : Hot Wings X7 + Mix 3X3 (Tenders X6 Solo supprimé) -->
+          <div class="tenders-trio" style="grid-template-columns: repeat(2, 1fr);">
+
+            <article class="plat-carte">
+              <div class="plat-carte__photo" aria-hidden="true">
+                <img src="images/Hot wings x7.png" alt="">
+              </div>
+              <div class="plat-carte__degrade plat-carte__degrade--bas" aria-hidden="true"></div>
+              <div class="plat-carte__contenu">
+                <h3 class="plat-carte__nom">Hot Wings X7</h3>
+                <p class="plat-carte__desc">7 ailes caramélisées en surface, juteuses à cœur — parfait pour grignoter (ou pas partager)</p>
+                <div class="plat-carte__bas">
+                  <span class="plat-carte__prix">12.00€</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="plat-carte">
+              <div class="plat-carte__photo" aria-hidden="true">
+                <img src="images/mix 3x3.png" alt="">
+              </div>
+              <div class="plat-carte__degrade plat-carte__degrade--bas" aria-hidden="true"></div>
+              <div class="plat-carte__contenu">
+                <span class="plat-carte__badge plat-carte__badge--jaune">Mix</span>
+                <h3 class="plat-carte__nom">Mix 3X3</h3>
+                <p class="plat-carte__desc">Le meilleur des deux mondes : 3 tenders moelleux + 3 wings croustillants. Sauce au choix. Pourquoi choisir ?</p>
+                <div class="plat-carte__bas">
+                  <span class="plat-carte__prix">13.00€</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- ==================== FIN TENDERS ==================== -->
+
+      <!-- ==================== BUCKETS FAMILIAUX ==================== -->
+      <section class="buckets-section" id="buckets">
+
+        <div class="buckets-section__bg" aria-hidden="true">
+          <img src="images/menu-buckets.webp" alt="">
+        </div>
+        <div class="buckets-section__overlay" aria-hidden="true"></div>
+
+        <div class="container buckets-contenu">
+
+          <div class="menu-section__entete">
+            <h2 class="menu-section__titre" style="color:#FFFFFF;">Buckets<br>Familiaux</h2>
+            <span class="menu-section__compte">4 formules</span>
+          </div>
+
+          <div class="buckets-grille">
+
+            <div class="bucket-carte">
+              <span class="bucket-carte__chip bucket-carte__chip--teal">Tenders</span>
+              <h3 class="bucket-carte__nom">Family<br>Tenders</h3>
+              <ul class="bucket-carte__inclus" aria-label="Contenu du bucket Family Tenders">
+                <li class="bucket-carte__item">20 Tenders</li>
+                <li class="bucket-carte__item">4 Frites maison</li>
+                <li class="bucket-carte__item">1 Boisson 1.5L</li>
+              </ul>
+              <div class="bucket-carte__bas">
+                <span class="bucket-carte__prix">25.50€</span>
+                <span class="bucket-carte__personnes">4–5 personnes</span>
+              </div>
+            </div>
+
+            <div class="bucket-carte bucket-carte--vedette">
+              <span class="bucket-carte__chip bucket-carte__chip--jaune">★ Populaire</span>
+              <h3 class="bucket-carte__nom">Family<br>Wings</h3>
+              <ul class="bucket-carte__inclus">
+                <li class="bucket-carte__item">33 Wings</li>
+                <li class="bucket-carte__item">4 Frites maison</li>
+                <li class="bucket-carte__item">1 Boisson 1.5L</li>
+              </ul>
+              <div class="bucket-carte__bas">
+                <span class="bucket-carte__prix">21.90€</span>
+                <span class="bucket-carte__personnes">4–5 personnes</span>
+              </div>
+            </div>
+
+            <div class="bucket-carte">
+              <span class="bucket-carte__chip bucket-carte__chip--teal">Mix</span>
+              <h3 class="bucket-carte__nom">Family<br>Mix</h3>
+              <ul class="bucket-carte__inclus">
+                <li class="bucket-carte__item">15 Wings</li>
+                <li class="bucket-carte__item">10 Tenders</li>
+                <li class="bucket-carte__item">4 Frites + 1 Boisson 1.5L</li>
+              </ul>
+              <div class="bucket-carte__bas">
+                <span class="bucket-carte__prix">23.90€</span>
+                <span class="bucket-carte__personnes">4–5 personnes</span>
+              </div>
+            </div>
+
+            <div class="bucket-carte">
+              <span class="bucket-carte__chip bucket-carte__chip--jaune">Maxi</span>
+              <h3 class="bucket-carte__nom">Family<br>Story</h3>
+              <ul class="bucket-carte__inclus">
+                <li class="bucket-carte__item">50 Wings</li>
+                <li class="bucket-carte__item">4 Frites maison</li>
+                <li class="bucket-carte__item">2 Boissons 1.5L</li>
+              </ul>
+              <div class="bucket-carte__bas">
+                <span class="bucket-carte__prix">31.90€</span>
+                <span class="bucket-carte__personnes">8–10 personnes</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- ==================== FIN BUCKETS ==================== -->
+
+      <!-- ==================== BOISSONS ==================== -->
+      <section class="menu-section menu-section--clair" id="boissons">
+        <div class="container">
+
+          <div class="menu-section__entete">
+            <h2 class="menu-section__titre">Boissons</h2>
+            <span class="menu-section__compte">5 références</span>
+          </div>
+
+          <div class="boissons-grille">
+
+            <div class="boisson-carte">
+              <div class="boisson-carte__img-wrap">
+                <img src="images/fanta orange.webp" alt="Fanta Orange" class="boisson-carte__img">
+              </div>
+              <div class="boisson-carte__info">
+                <p class="boisson-carte__nom">Fanta Orange</p>
+                <p class="boisson-carte__vol">33cl</p>
+                <p class="boisson-carte__prix">2.90€</p>
+              </div>
+            </div>
+
+            <div class="boisson-carte">
+              <div class="boisson-carte__img-wrap">
+                <img src="images/7up.webp" alt="7UP" class="boisson-carte__img">
+              </div>
+              <div class="boisson-carte__info">
+                <p class="boisson-carte__nom">7UP</p>
+                <p class="boisson-carte__vol">33cl</p>
+                <p class="boisson-carte__prix">2.90€</p>
+              </div>
+            </div>
+
+            <div class="boisson-carte">
+              <div class="boisson-carte__img-wrap">
+                <img src="images/schweppes agrumes.webp" alt="Schweppes Agrumes" class="boisson-carte__img">
+              </div>
+              <div class="boisson-carte__info">
+                <p class="boisson-carte__nom">Schweppes</p>
+                <p class="boisson-carte__vol">Agrumes · 33cl</p>
+                <p class="boisson-carte__prix">2.90€</p>
+              </div>
+            </div>
+
+            <div class="boisson-carte">
+              <div class="boisson-carte__img-wrap">
+                <img src="images/tropico.webp" alt="Tropico" class="boisson-carte__img">
+              </div>
+              <div class="boisson-carte__info">
+                <p class="boisson-carte__nom">Tropico</p>
+                <p class="boisson-carte__vol">33cl</p>
+                <p class="boisson-carte__prix">2.90€</p>
+              </div>
+            </div>
+
+            <div class="boisson-carte">
+              <div class="boisson-carte__img-wrap">
+                <img src="images/cristaline fraise.webp" alt="Cristaline Fraise" class="boisson-carte__img">
+              </div>
+              <div class="boisson-carte__info">
+                <p class="boisson-carte__nom">Cristaline</p>
+                <p class="boisson-carte__vol">Fraise · 50cl</p>
+                <p class="boisson-carte__prix">2.50€</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- ==================== FIN BOISSONS ==================== -->
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+
+      <div class="footer__ticker" aria-hidden="true">
+        <div class="footer__ticker-piste">
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+          <span class="footer__ticker-item">CHICKEN STORY <span class="footer__ticker-sep">•</span></span>
+        </div>
+      </div>
+
+      <div class="footer__corps">
+        <div class="container footer__grille">
+
+          <div class="footer__col footer__marque">
+            <a href="index.html" class="footer__logo" aria-label="Chicken Story - accueil">
+              <img src="images/logo.png" alt="Chicken Story" class="footer__logo-img">
+            </a>
+          </div>
+
+          <div class="footer__sep" aria-hidden="true"></div>
+
+          <div class="footer__col">
+            <h3 class="footer__col-titre">Informations</h3>
+            <ul class="footer__liste">
+              <li><a href="mentions-legales.html">Mentions légales</a></li>
+              <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__sep" aria-hidden="true"></div>
+
+          <div class="footer__col">
+            <ul class="footer__liste">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__sep" aria-hidden="true"></div>
+
+          <div class="footer__col">
+            <h3 class="footer__col-titre">Suivez-nous</h3>
+            <ul class="footer__liste footer__liste--reseaux">
+              <li>
+                <svg class="footer__reseau-icone" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                <a href="#">chicken.story</a>
+              </li>
+              <li>
+                <svg class="footer__reseau-icone" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.95a8.27 8.27 0 0 0 4.84 1.56V7.07a4.85 4.85 0 0 1-1.07-.38z"/></svg>
+                <a href="#">@chickenstory</a>
+              </li>
+              <li>
+                <svg class="footer__reseau-icone" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                <a href="#">Chicken Story Argenteuil</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        <p>© 2025 Chicken Story · Argenteuil · Île-de-France · Tous droits réservés</p>
+      </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
